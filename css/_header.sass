@@ -1,0 +1,44 @@
+header
+    .hamburger,.searchMob
+        display: none
+    display: flex
+    justify-content: space-between
+    align-items: center
+    padding: 0 10px
+    margin: 15px 0
+    font-size: 0.8rem
+    img.logo
+        height: 20px
+    nav
+        transition: all 2000ms ease
+        flex: 1
+        margin-left: 15px
+        a
+            padding: 0 5px    
+    .nav-right *
+        margin-left: 10px
+
+header nav.clicked
+    display: flex
+    position: absolute
+    flex-direction: column
+    top: 40px
+    left: -15px
+    background: white
+    opacity: 0.95
+    width: 100%
+    font-size: 1.2rem
+    height: 0
+    overflow: hidden
+    a
+        margin-left: 25px
+        &:hover
+            border-bottom: none
+        &+a
+            margin-top: 30px
+            padding-top: 25px
+            border-top: 1px solid grey
+        &:last-of-type
+            padding-bottom: 25px
+        &:first-of-type
+            margin-top: 20px

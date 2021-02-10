@@ -1,0 +1,43 @@
+@media only screen and (max-width: 850px)
+    header
+        .hamburger,.searchMob
+            display: inline
+        .searchPC, nav, .allMs
+            display: none
+        .searchMob
+            margin-left: 15px
+        .hamburger
+            cursor: pointer
+    main.showcase
+        padding: 5em 2em 
+        height: 250px
+    
+    main.showcase2 p
+        max-width: 300px
+
+    .bottomWrapper section.links
+        grid-template-columns: repeat(3,1fr)
+
+    footer
+        flex-direction: column
+        .footerLinks
+            justify-content: center
+            margin: .5em auto
+            flex-wrap: wrap
+        .copyright
+            margin: 0
+
+        
+@media screen and ( max-width: 700px )
+    section.products
+        grid-template-columns: repeat(2,1fr)
+    
+@media screen and ( max-width: 500px )
+    section.products
+        grid-template-columns: repeat(1,1fr)
+    
+    .bottomWrapper section.links
+        grid-template-columns: repeat(2,1fr)
+    .highlights .highlightsInner
+        grid-template-columns: repeat(2,1fr)
+        grid-gap: 1em
